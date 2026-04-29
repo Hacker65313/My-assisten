@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assisten - Layanan Jasa 24 Jam Nonstop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+<!-- ===== WELCOME OVERLAY ===== -->
+<div id="welcome-overlay">
+    <div class="welcome-particles" id="particles"></div>
+    <div class="welcome-ring"></div>
+    <div class="welcome-ring"></div>
+    <div class="welcome-ring"></div>
+    <div class="welcome-content">
+        <div class="welcome-logo">MY <span>ASSISTEN</span></div>
+        <div class="welcome-text">Welcome to My Assisten</div>
+        <div class="welcome-subtitle">Layanan Jasa Terpercaya · 24 Jam Nonstop</div>
+        <div class="welcome-loader">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+    <a href="#" class="nav-logo" onclick="showSection('home')">MY <span>ASSISTEN</span></a>
+    <div class="nav-overlay" id="navOverlay" onclick="closeBurger()"></div>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="#" onclick="showSection('home')" class="active" id="nav-home">🏠 Home</a></li>
+        <li><a href="#" onclick="showSection('layanan')" id="nav-layanan">🛠️ Layanan</a></li>
+        <li><a href="#" onclick="showSection('tentang')" id="nav-tentang">👥 Tentang</a></li>
+        <li><a href="#" onclick="showSection('kontak')" id="nav-kontak">📞 Kontak</a></li>
+        <li>
+            <a href="https://wa.me/6285812297169?text=Halo%20My%20Assisten!%20Saya%20ingin%20pesan%20layanan."
+               target="_blank" class="nav-wa-btn" onclick="closeBurger()">
+               💬 WhatsApp
+            </a>
+        </li>
+    </ul>
+    <div class="burger" id="burger" onclick="toggleBurger()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </div>
+</nav>
+
+<!-- ===== HOME SECTION ===== -->
+<section id="home" class="section active">
+    <div class="hero-bg-shapes">
+        <div class="hero-shape"></div>
+        <div class="hero-shape"></div>
+        <div class="hero-shape"></div>
+    </div>
+    <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-left">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                ON — 24 Jam Nonstop
+            </div>
+            <h1 class="hero-title">
+                Solusi Jasa<br>
+                <span>Terlengkap</span><br>
+                Untuk Anda!
+            </h1>
+            <p class="hero-tagline">
+                Kami menyediakan layanan jasa suruh apapun area se-kabupaten Ngawi.
+                Bergerak cepat, setiti dan cekatan — siap melayani job apa pun dengan senang hati! 🙌
+            </p>
+            <div class="hero-discount">
+                🎉 Dapatkan <span>Diskon 50%</span> Order 5x
+            </div>
+            <div class="hero-buttons">
+                <a href="https://wa.me/6285812297169?text=Halo%20My%20Assisten!%20Saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20layanan%20Anda."
+                   target="_blank" class="btn-wa">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Chat WhatsApp
+                </a>
+                <button class="btn-secondary" onclick="showSection('layanan')">
+                    🛠️ Lihat Layanan
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="hero-right">
+            <div class="hero-card">
+                <div class="hero-card-title">📊 Info My Assisten</div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="counter1">0</div>
+                        <div class="stat-label">Layanan</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24H</div>
+                        <div class="stat-label">Nonstop</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50%</div>
+                        <div class="stat-label">Diskon</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="counter2">0</div>
+                        <div class="stat-label">Pelanggan</div>
+                    </div>
+                </div>
+                <div class="hero-contact">
+                    <div class="contact-item">
+                        <div class="contact-icon wa">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </div>
+                        <span>085812297169</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon tt">🎵</div>
+                        <span>@myassistenngawi</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon em">✉️</div>
+                        <span>myassisten65@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator" onclick="showSection('layanan')">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- ===== LAYANAN SECTION ===== -->
+<section id="layanan" class="section">
+    <div style="padding: 60px 30px 100px;">
+        <div class="section-header">
+            <div class="section-badge">🛠️ Apa yang Kami Tawarkan</div>
+            <h2 class="section-title">List Jasa <span>My Assisten</span></h2>
+            <p class="section-subtitle">Berbagai layanan lengkap siap membantu Anda kapanpun dan dimanapun — 24 jam nonstop!</p>
+        </div>
+        <div class="services-grid" id="servicesGrid">
+            <!-- Cards generated by JS -->
+        </div>
+    </div>
+</section>
+
+<!-- ===== TENTANG SECTION ===== -->
+<section id="tentang" class="section">
+    <div id="tentang-inner">
+        <div class="section-header" style="padding-top: 60px;">
+            <div class="section-badge">👥 Kenali Kami Lebih Dekat</div>
+            <h2 class="section-title">Tentang <span>My Assisten</span></h2>
+            <p class="section-subtitle">Kami hadir untuk mempermudah hidup Anda dengan layanan terpercaya dan profesional.</p>
+        </div>
+        <div class="about-container" style="padding: 0 30px 80px;">
+            <div class="about-image-side">
+                <div class="about-main-card">
+                    <div class="about-badge-24">ON<br>24 JAM<br>NONSTOP</div>
+                    <span class="about-emoji">🤝</span>
+                    <div class="about-card-title">MY ASSISTEN</div>
+                    <div class="about-card-subtitle">Mitra terpercaya untuk semua kebutuhan Anda sehari-hari di Kabupaten Ngawi</div>
+                </div>
+                <div class="about-floating-card" style="bottom:-20px;left:-20px;">✅ 100% Terpercaya</div>
+            </div>
+            <div class="about-text-side">
+                <div class="section-badge">📍 Kabupaten Ngawi</div>
+                <h3 class="about-title">Layanan Jasa <span>Terlengkap</span> & Terpercaya</h3>
+                <p class="about-desc">
+                    My Assisten adalah platform layanan jasa suruh apapun yang melayani area se-Kabupaten Ngawi.
+                    Kami bergerak dengan cepat, setiti, dan cekatan — selalu siap melayani berbagai kebutuhan Anda
+                    dengan penuh semangat dan profesionalisme. Dari jasa makanan hingga sopir pribadi, kami hadir 24 jam nonstop!
+                </p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-text">
+                            <strong>Respon Cepat</strong>
+                            <span>Tim kami siap merespons pesanan Anda dalam hitungan menit</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🕐</div>
+                        <div class="feature-text">
+                            <strong>24 Jam Nonstop</strong>
+                            <span>Layanan tersedia kapanpun Anda butuhkan, siang maupun malam</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💯</div>
+                        <div class="feature-text">
+                            <strong>Terpercaya & Profesional</strong>
+                            <span>Tim berpengalaman yang amanah dan bertanggung jawab</span>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📍</div>
+                        <div class="feature-text">
+                            <strong>Area Ngawi & Sekitarnya</strong>
+                            <span>Menjangkau seluruh wilayah Kabupaten Ngawi dengan cepat</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/6285812297169?text=Halo%20My%20Assisten!%20Saya%20ingin%20tahu%20lebih%20lanjut."
+                   target="_blank" class="btn-wa" style="display:inline-flex;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Hubungi Kami Sekarang
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== KONTAK SECTION ===== -->
+<section id="kontak" class="section">
+    <div style="padding: 60px 30px 100px;">
+        <div class="section-header">
+            <div class="section-badge">📞 Hubungi Kami</div>
+            <h2 class="section-title">Kontak <span>My Assisten</span></h2>
+            <p class="section-subtitle">Hubungi kami melalui berbagai saluran yang tersedia. Kami siap membantu Anda!</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <a href="https://wa.me/6285812297169?text=Halo%20My%20Assisten!%20Saya%20ingin%20pesan%20layanan."
+                   target="_blank" class="contact-card">
+                    <div class="contact-card-icon wa-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-card-info">
+                        <strong>WhatsApp</strong>
+                        <span>085812297169</span>
+                    </div>
+                    <span style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:1.3rem;">→</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@myassistenngawi" target="_blank" class="contact-card">
+                    <div class="contact-card-icon tt-icon" style="font-size:1.4rem;">🎵</div>
+                    <div class="contact-card-info">
+                        <strong>TikTok</strong>
+                        <span>@myassistenngawi</span>
+                    </div>
+                    <span style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:1.3rem;">→</span>
+                </a>
+
+                <a href="mailto:myassistenn65@gmail.com" class="contact-card">
+                    <div class="contact-card-icon em-icon" style="font-size:1.4rem;">✉️</div>
+                    <div class="contact-card-info">
+                        <strong>Email</strong>
+                        <span>myassistenn65@gmail.com</span>
+                    </div>
+                    <span style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:1.3rem;">→</span>
+                </a>
+
+                <a href="https://www.myassisten.com" target="_blank" class="contact-card">
+                    <div class="contact-card-icon web-icon" style="font-size:1.4rem;">🌐</div>
+                    <div class="contact-card-info">
+                        <strong>Website</strong>
+                        <span>www.myassisten.com</span>
+                    </div>
+                    <span style="margin-left:auto;color:rgba(255,255,255,0.3);font-size:1.3rem;">→</span>
+                </a>
+
+                <div class="contact-card" style="cursor:default;">
+                    <div class="contact-card-icon" style="background:linear-gradient(135deg,#e91e63,#c0392b);font-size:1.4rem;">📍</div>
+                    <div class="contact-card-info">
+                        <strong>Lokasi</strong>
+                        <span>Kabupaten Ngawi, Jawa Timur</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Big WA CTA -->
+            <div class="wa-cta-box">
+                <span class="wa-cta-icon">💬</span>
+                <div class="wa-cta-title">Pesan Layanan Sekarang!</div>
+                <p class="wa-cta-text">
+                    Hubungi kami langsung melalui WhatsApp untuk mendapatkan pelayanan terbaik dan informasi lebih lanjut tentang diskon spesial kami.
+                </p>
+                <span class="wa-cta-number">📱 085812297169</span>
+                <br>
+                <a href="https://wa.me/6285812297169?text=Halo%20My%20Assisten!%20Saya%20ingin%20pesan%20layanan.%20Mohon%20info%20lebih%20lanjut%20ya!"
+                   target="_blank" class="btn-wa-big">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Chat WhatsApp Sekarang!
+                </a>
+                <div style="margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                    <span style="background:rgba(255,255,255,0.15);padding:6px 14px;border-radius:20px;font-size:0.8rem;color:white;">⚡ Respon Cepat</span>
+                    <span style="background:rgba(255,255,255,0.15);padding:6px 14px;border-radius:20px;font-size:0.8rem;color:white;">🕐 24 Jam</span>
+                    <span style="background:rgba(255,255,255,0.15);padding:6px 14px;border-radius:20px;font-size:0.8rem;color:white;">💯 Terpercaya</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <div class="footer-logo">MY <span>ASSISTEN</span></div>
+    <p class="footer-text">Layanan Jasa Terlengkap · 24 Jam Nonstop · Kabupaten Ngawi</p>
+    <div class="footer-social">
+        <a href="https://wa.me/6285812297169" target="_blank" class="social-btn" title="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="https://www.tiktok.com/@myassistenngawi" target="_blank" class="social-btn" title="TikTok">🎵</a>
+        <a href="mailto:myassistenn65@gmail.com" class="social-btn" title="Email">✉️</a>
+        <a href="https://www.myassisten.com" target="_blank" class="social-btn" title="Website">🌐</a>
+    </div>
+    <p class="footer-copy">© 2024 My Assisten · All Rights Reserved · Kabupaten Ngawi, Jawa Timur</p>
+</footer>
+
+<!-- ===== FLOATING WA BUTTON ===== -->
+<div class="floating-wa">
+    <div class="floating-wa-tooltip">Chat Kami di WhatsApp! 👋</div>
+    <a href="https://wa.me/6285812297169?text=Halo%20My%20Assisten!%20Saya%20ingin%20pesan%20layanan." target="_blank" class="floating-wa-btn">
+        <div class="wa-ripple"></div>
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+    // ===== SERVICES DATA =====
+    const services = [
+        { icon: '🍽️', name: 'Jasa Makanan', desc: 'Pesan & antar makanan favorit Anda ke rumah dengan cepat dan aman.', msg: 'Jasa Makanan' },
+        { icon: '📦', name: 'Jasa Barang', desc: 'Kirim dan ambil barang apapun ke tujuan yang Anda inginkan.', msg: 'Jasa Barang' },
+        { icon: '🏠', name: 'Jasa Rumah', desc: 'Berbagai layanan kebutuhan rumah tangga Anda.', msg: 'Jasa Rumah' },
+        { icon: '✈️', name: 'Traveling', desc: 'Bantu persiapkan perjalanan wisata Anda dengan nyaman.', msg: 'Traveling' },
+        { icon: '🛒', name: 'Labrak Pasar', desc: 'Belanja kebutuhan Anda di pasar tanpa harus antri.', msg: 'Labrak Pasar' },
+        { icon: '🔑', name: 'Pemulihan Akun', desc: 'Bantu recover akun sosial media dan layanan digital.', msg: 'Pemulihan Akun' },
+        { icon: '📱', name: 'Sosmed', desc: 'Bantu kelola dan optimalkan akun media sosial Anda.', msg: 'Sosmed' },
+        { icon: '🚗', name: 'Sopir Pribadi', desc: 'Driver profesional siap mengantar Anda ke mana saja.', msg: 'Sopir Pribadi' },
+        { icon: '🚌', name: 'Sopir Umum', desc: 'Layanan transportasi umum yang aman dan terpercaya.', msg: 'Sopir Umum' },
+        { icon: '🛡️', name: 'Satpam', desc: 'Tenaga keamanan profesional untuk acara dan lokasi Anda.', msg: 'Satpam' },
+        { icon: '👶', name: 'Antar Jemput Anak', desc: 'Layanan antar jemput anak ke sekolah dengan aman.', msg: 'Antar Jemput Anak' },
+        { icon: '💬', name: 'Teman Curhat', desc: 'Butuh teman cerita? Kami siap mendengarkan Anda!', msg: 'Teman Curhat' },
+        { icon: '🔧', name: 'Service Elektronik', desc: 'Perbaikan berbagai peralatan elektronik rumah tangga.', msg: 'Service Elektronik' },
+        { icon: '🌾', name: 'Pertanian', desc: 'Bantu berbagai kebutuhan pekerjaan di bidang pertanian.', msg: 'Pertanian' },
+        { icon: '🔨', name: 'Pertukangan', desc: 'Jasa tukang kayu, bangunan, dan renovasi rumah.', msg: 'Pertukangan' },
+        { icon: '🌿', name: 'Taman', desc: 'Perawatan dan pembuatan taman rumah Anda.', msg: 'Taman' },
+        { icon: '🛠️', name: 'Repair', desc: 'Perbaikan barang dan peralatan berbagai jenis.', msg: 'Repair' },
+        { icon: '🏍️', name: 'Estimasi Motor/Mobil', desc: 'Estimasi biaya perbaikan kendaraan Anda.', msg: 'Estimasi Motor/Mobil' },
+        { icon: '✨', name: 'Jasa Lain-Lain', desc: 'Punya kebutuhan lain? Hubungi kami, kami siap bantu!', msg: 'Jasa Lain-Lain' }
+    ];
+
+    // ===== GENERATE SERVICE CARDS =====
+    function generateServiceCards() {
+        const grid = document.getElementById('servicesGrid');
+        grid.innerHTML = services.map((s, i) => `
+            <div class="service-card animate-in" style="animation-delay:${i * 0.05}s">
+                <span class="service-icon">${s.icon}</span>
+                <div class="service-name">${s.name}</div>
+                <div class="service-desc">${s.desc}</div>
+                <a href="https://wa.me/6208812974105?text=Halo%20My%20Assisten!%20Saya%20ingin%20pesan%20${encodeURIComponent(s.msg)}."
+                   target="_blank" class="service-wa-link">
+                    💬 Pesan via WA →
+                </a>
+            </div>
+        `).join('');
+    }
+    generateServiceCards();
+
+    // ===== WELCOME OVERLAY =====
+    function createParticles() {
+        const container = document.getElementById('particles');
+        for (let i = 0; i < 25; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            p.style.cssText = `
+                left: ${Math.random() * 100}%;
+                width: ${Math.random() * 8 + 4}px;
+                height: ${Math.random() * 8 + 4}px;
+                animation-duration: ${Math.random() * 8 + 6}s;
+                animation-delay: ${Math.random() * 5}s;
+                opacity: ${Math.random() * 0.6 + 0.2};
+            `;
+            container.appendChild(p);
+        }
+    }
+    createParticles();
+
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const overlay = document.getElementById('welcome-overlay');
+            overlay.classList.add('hide');
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                startCounters();
+            }, 800);
+        }, 2800);
+    });
+
+    // ===== COUNTER ANIMATION =====
+    function animateCounter(el, target, duration = 1500) {
+        let start = 0;
+        const step = target / (duration / 16);
+        const timer = setInterval(() => {
+            start += step;
+            if (start >= target) {
+                el.textContent = target + '+';
+                clearInterval(timer);
+            } else {
+                el.textContent = Math.floor(start) + '+';
+            }
+        }, 16);
+    }
+
+    function startCounters() {
+        const c1 = document.getElementById('counter1');
+        const c2 = document.getElementById('counter2');
+        if (c1) animateCounter(c1, 19);
+        if (c2) animateCounter(c2, 500, 2000);
+    }
+
+    // ===== SPA NAVIGATION =====
+    function showSection(id) {
+        // Hide all sections
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        // Show target
+        const target = document.getElementById(id);
+        if (target) {
+            target.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        // Update nav links
+        document.querySelectorAll('.nav-menu a').forEach(a => a.classList.remove('active'));
+        const navLink = document.getElementById('nav-' + id);
+        if (navLink) navLink.classList.add('active');
+
+        // Close burger if open
+        closeBurger();
+        return false;
+    }
+
+    // ===== BURGER MENU =====
+    function toggleBurger() {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('navMenu');
+        const overlay = document.getElementById('navOverlay');
+        burger.classList.toggle('active');
+        menu.classList.toggle('open');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = burger.classList.contains('active') ? 'hidden' : '';
+    }
+
+    function closeBurger() {
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('navMenu');
+        const overlay = document.getElementById('navOverlay');
+        burger.classList.remove('active');
+        menu.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // ===== NAVBAR SCROLL EFFECT =====
+    window.addEventListener('scroll', () => {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // ===== TYPED TEXT ANIMATION for welcome =====
+    // Extra: glowing text typewriter effect
+    (function typewriterEffect() {
+        const texts = ['Welcome to My Assisten', 'Layanan Jasa 24 Jam', 'Siap Membantu Anda!'];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const el = document.querySelector('.welcome-text');
+        if (!el) return;
+
+        function type() {
+            const current = texts[textIndex];
+            if (isDeleting) {
+                el.textContent = current.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                el.textContent = current.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? 60 : 90;
+
+            if (!isDeleting && charIndex === current.length) {
+                speed = 1800;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                speed = 400;
+            }
+
+            setTimeout(type, speed);
+        }
+        setTimeout(type, 1000);
+    })();
+</script>
+</body>
+</html>
